@@ -8,7 +8,7 @@
         {
             var connection = new HubConnectionBuilder()
             .WithAutomaticReconnect()
-            .WithUrl("https://53c5-50-106-20-36.ngrok.io/chat")
+            .WithUrl("https://[myappserver]:[port]/chat")
             .Build();
 
             await connection.StartAsync();

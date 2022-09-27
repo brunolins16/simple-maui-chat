@@ -5,12 +5,8 @@ builder.Services.AddSignalR();
 
 var app = builder.Build();
 
-app.MapGet("/hello", () => "Hello");
-
 app.MapHub<ChatHub>("/chat");
-
 app.Run();
-
 
 public class ChatHub : Hub
 {
